@@ -100,8 +100,7 @@ const Link = styled.li`
   display: flex;
   gap: 1.1rem;
   color: white;
-  cursor: pointer;
-  :hover{
+  &:hover{
     background-color: #6f737ce8;
     border-radius: 10px;
   }

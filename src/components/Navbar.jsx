@@ -32,6 +32,7 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 10%;
+  margin-bottom: 20px;
 `;
 const Text = styled.h1`
   color: #ffffff;
