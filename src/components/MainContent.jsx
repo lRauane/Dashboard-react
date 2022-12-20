@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Earnings from "./Earnings";
 import Info from "./Info";
 import Invoices from "./Invoices";
+import JoinSlack from "./JoinSlack";
 import NavBar from "./Navbar";
 import Projects from "./Projects";
 
@@ -27,6 +28,7 @@ function MainContent() {
               <TitleText>Recent Invoices</TitleText>
               <Invoices /> 
             </InvoicesContainer>
+            <JoinSlack />
           </ColumnOne2>
           <ColumnTwol2></ColumnTwol2>
         </SectionTwor>
