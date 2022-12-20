@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Earnings from "./Earnings";
 import Info from "./Info";
 import NavBar from "./Navbar";
+import Projects from "./Projects";
 
 function MainContent() {
   return (
@@ -14,7 +15,10 @@ function MainContent() {
             <Earnings />
             <Info />
           </ColumOnel1>
-          <ColumTwol1></ColumTwol1>
+          <ColumTwol1>
+            <TitleText>Your Projects</TitleText>
+            <Projects />
+          </ColumTwol1>
         </SectionOne>
         <SectionTwor>
           <ColumnOne2></ColumnOne2>
@@ -38,6 +42,8 @@ const SubContainer = styled.div`
   gap: 4rem;
 `;
 const TitleText = styled.h3`
+  font-size: 1.5rem;
+  color: #fff;
   height: 20%;
 `;
 const SectionOne = styled.div`
