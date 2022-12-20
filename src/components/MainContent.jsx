@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Earnings from "./Earnings";
 import Info from "./Info";
+import Invoices from "./Invoices";
 import NavBar from "./Navbar";
 import Projects from "./Projects";
 
@@ -21,7 +22,12 @@ function MainContent() {
           </ColumTwol1>
         </SectionOne>
         <SectionTwor>
-          <ColumnOne2></ColumnOne2>
+          <ColumnOne2>
+            <InvoicesContainer>
+              <TitleText>Recent Invoices</TitleText>
+              <Invoices /> 
+            </InvoicesContainer>
+          </ColumnOne2>
           <ColumnTwol2></ColumnTwol2>
         </SectionTwor>
       </SubContainer>
@@ -63,6 +69,11 @@ const ColumOnel1 = styled.div`
   gap: 3rem;
 `;
 const ColumnOne2 = styled.div``;
+const InvoicesContainer = styled.div`
+height: 60%;
+
+
+`
 const ColumTwol1 = styled.div`
   display: flex;
   flex-direction: column;
