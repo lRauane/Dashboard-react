@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { themeColor } from "../utils";
 
-function Badge({ content, glow = false, paid = false, late = false }) {
+function Badge({ content,clean=false, glow = false, paid = false, late = false }) {
   return (
-    <Div glow={glow} paid={paid} late={late}>
+    <Div glow={glow} paid={paid} late={late} clean={clean}>
       {content}
     </Div>
   );
@@ -16,6 +17,14 @@ const Div = styled.span`
   color: white;
   background-color: #077e71;
   cursor: pointer;
+
+  ${({ clean }) =>
+    clean &&
+    `
+    border: 0.05rem solid ${themeColor};
+    color: #fff;
+    background-color: #077e71;
+  `}
 
   ${({ glow }) =>
     glow &&
