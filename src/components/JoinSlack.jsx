@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {  hoverEffect, themeColor } from "../utils";
 import { FaSlack } from "react-icons/fa";
-
+import { DarkThemeColor, hoverEffect, themeColor } from "../utils";
 function JoinSlack() {
   return (
     <JoinChannel>
@@ -12,7 +11,7 @@ function JoinSlack() {
             <FaSlack />
           </SlackLogo>
           <SlackText>
-            <SlackHead>Engage wqith clients</SlackHead>
+            <SlackHead>Engage with clients</SlackHead>
             <SlackFoot>Join slack channel</SlackFoot>
           </SlackText>
         </Slack>
@@ -23,9 +22,9 @@ function JoinSlack() {
 }
 
 const JoinChannel = styled.div`
-  background-color: ${themeColor};
+  background-color: ${DarkThemeColor};
   height: 50%;
-  margin-top: 9rem;
+  margin-top: 6.5rem;
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -33,17 +32,30 @@ const JoinChannel = styled.div`
   &:hover {
     box-shadow: ${hoverEffect};
   }
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: max-content;
+    width: 80%;
+  }
 `;
+
 const CardContent = styled.div`
   margin: 1rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
+
 const Slack = styled.div`
   display: flex;
 `;
+
 const SlackLogo = styled.div`
   margin-right: 0.7rem;
   display: flex;
@@ -55,9 +67,11 @@ const SlackLogo = styled.div`
     width: 3rem;
   }
 `;
+
 const SlackText = styled.div`
   color: white;
 `;
+
 const SlackHead = styled.h2`
   font-weight: 500;
 `;
@@ -66,7 +80,7 @@ const SlackFoot = styled.h5`
   font-weight: normal;
 `;
 const SlackJoin = styled.button`
-  background-color: #2b313d99;
+  background-color: ${themeColor};
   border: none;
   outline: none;
   padding: 1rem 2rem;

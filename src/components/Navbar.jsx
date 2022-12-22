@@ -33,6 +33,10 @@ const NavContainer = styled.nav`
   align-items: center;
   height: 10%;
   margin-bottom: 2rem;
+  @media screen and (min-width: 320px) and (max-width:1080px){
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
 `;
 const Text = styled.h1`
   color: #ffffff;
@@ -40,6 +44,10 @@ const Text = styled.h1`
     font-size: 1.5rem;
     font-weight: 400;
     color: #16b88f;
+  }
+  @media screen and (min-width: 320px) and (max-width:1080px){
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 const InputContainer = styled.div`
@@ -72,6 +80,9 @@ const MakeContainer = styled.button`
   padding: 20px;
   width: 231.58px;
   height: 66.04px;
+  @media screen and (min-width: 320px) and (max-width:1080px){
+   display: none;
+  }
 `;
 const IconMore = styled.div`
   display: flex;
@@ -101,6 +112,10 @@ const Input = styled.input`
   background: #2e323c;
   border-bottom-right-radius: 11.654px;
   border-top-right-radius: 11.654px;
+
+  @media screen and (min-width: 320px) and (max-width:1080px){
+    width: 100%;
+  }
 
   &:focus {
     border: none;

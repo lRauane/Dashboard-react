@@ -28,6 +28,11 @@ const EarningCard = styled.div`
   &:hover{
     box-shadow: ${hoverEffect};
   }
+  @media screen and (min-width: 320px) and (max-width:1080px){
+    width: 80%;
+    margin:3rem auto;
+    background-color: #1e2433;
+  }
 `
 const CardContent = styled.div`
   margin: 1rem;

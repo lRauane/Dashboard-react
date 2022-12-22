@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Badge from "./badge";
 import avatarImage from "../assets/avatarImage.jpg";
-import { RiFileCopyLine} from "react-icons/ri";
-import { BsFillBarChartFill, BsFillInboxFill} from "react-icons/bs";
+import { RiFileCopyLine } from "react-icons/ri";
+import { BsFillBarChartFill, BsFillInboxFill } from "react-icons/bs";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
 import { FaWallet } from "react-icons/fa";
@@ -57,6 +57,11 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    width: 100%;
+    height: max-content !important;
+    background-color: #272d3a;
+  }
 `;
 const ProfileContainer = styled.div`
   display: flex;
@@ -92,27 +97,28 @@ const Links = styled.ul`
   flex-direction: column;
   padding-top: 2rem;
   height: 60%;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin: 0 auto;
+  }
 `;
 const Link = styled.li`
   margin-left: 25%;
-  margin-bottom: 2rem; 
-  padding:10px;
+  margin-bottom: 2rem;
+  padding: 10px;
   display: flex;
   gap: 1.1rem;
   color: white;
-  &:hover{
+  &:hover {
     background-color: #6f737ce8;
     border-radius: 10px;
   }
-  h3{
+  h3 {
     font-weight: 300;
   }
-  svg{
+  svg {
     font-size: 1.1rem;
     margin-top: 3%;
   }
 `;
-
-
 
 export default Sidebar;
