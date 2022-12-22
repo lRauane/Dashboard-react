@@ -46,7 +46,7 @@ const InputContainer = styled.div`
   display: flex;
 `;
 const Icon = styled.div`
-  height: 4.5rem;
+  height: 4.1.2rem;
   width: 3.5rem;
   background-color: #088171;
   display: flex;
@@ -71,20 +71,20 @@ const MakeContainer = styled.button`
   align-items: center;
   padding: 20px;
   width: 231.58px;
-height: 66.04px;
+  height: 66.04px;
 `;
 const IconMore = styled.div`
-display: flex;
-background-color: #0f6369;
-padding: 10px;
-align-items: center;
+  display: flex;
+  background-color: #0f6369;
+  padding: 10px;
+  align-items: center;
   color: white;
 `;
 const TextMore = styled.p`
-color: white;
-font-size: 1rem;
-font-weight: 500;
-`
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+`;
 const Input = styled.input`
   display: flex;
   flex-direction: row;
@@ -92,8 +92,11 @@ const Input = styled.input`
   align-items: center;
   gap: 5.83px;
   border: none;
-  width: 400px;
-  height: 70px;
+  width: 300px;
+  height: 66.04px;
+  text-align: center;
+  color: #FFF;
+  
 
   background: #2e323c;
   border-bottom-right-radius: 11.654px;
