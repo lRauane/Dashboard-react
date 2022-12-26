@@ -24,7 +24,7 @@ function JoinSlack() {
 const JoinChannel = styled.div`
   background-color: ${DarkThemeColor};
   height: 50%;
-  margin-top: 6.5rem;
+  margin-top: 8rem;
   border-radius: 1rem;
   display: flex;
   align-items: center;

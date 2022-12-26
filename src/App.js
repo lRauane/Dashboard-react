@@ -16,9 +16,8 @@ function App() {
 export const Container = styled.div`
   display: flex;
   height: 97vh;
-  background-color: #272d3a;
   border: 2rem;
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) and (max-width:1080px) {
     align-items: center;
     flex-direction: column;
   }

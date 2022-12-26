@@ -47,7 +47,8 @@ const InvoicesContainer = styled.div`
   width: 35rem;
   border-radius: 1rem;
   margin-top: 1rem;
-  background-color: white;
+  background-color: #272d3a99;
+  color: white;
   height: 140%;
   box-shadow: ${cardShadow};
   transition: 0.4s ease-in-out;

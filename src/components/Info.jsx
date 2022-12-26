@@ -38,7 +38,7 @@ function Info() {
 const InfoCard = styled.div`
   height: 100%;
   width: 14rem;
-  background-color: white;
+  background-color: #272d3a99;
   border-radius: 1rem;
   padding: 1rem;
   color: white;
@@ -53,7 +53,7 @@ const InfoCard = styled.div`
 `;
 
 const Card = styled.div`
-  background-color: rgba(183, 194, 243, 0.3);
+  background-color: rgba(102, 104, 117, 0.3);
   border-radius: 1rem;
   margin-bottom: 1rem;
 `;
@@ -83,10 +83,10 @@ const InfoContainer = styled.div`
   margin-left: 0.7rem;
 `;
 const Title = styled.h3`
-  color: black;
+  color:  white;
 `;
 const SubTitle = styled.h5`
-  color: #333333;
+  color: white;
   font-weight: normal;
 `;
 
